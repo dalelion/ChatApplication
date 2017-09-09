@@ -13,7 +13,7 @@ namespace ChatConsole {
         static void Main (string[] args) {
 
             Console.WriteLine("[1] Join Server\n[2] Host Server\n[3] Quit\n");
-            int Option = int.Parse(Console.ReadLine());
+            int Option = int.Parse(Console.ReadLine()); 
 
             if (Option == 1) {
                 Thread ClientThread = new Thread(new ThreadStart(ConnectAsClient));
